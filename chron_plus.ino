@@ -42,7 +42,7 @@ const char* ssid     = "WHOAMI";
 const char* password = "Rafael024!!qwerty";
 
 // Laravel Server Settings (UPDATE PORT IF NEEDED)
-const char* serverUrl = "http://10.17.239.235:8000/api/zentrix/test"; 
+const char* serverUrl = "http://10.113.66.235:8000/api/zentrix/test"; 
 
 // NTP Client Settings
 WiFiUDP ntpUDP;
@@ -67,7 +67,7 @@ bool isConnected = false;
 unsigned long lastReconnectAttempt = 0;
 const unsigned long RECONNECT_INTERVAL = 30000; 
 unsigned long lastSyncAttempt = 0;
-const unsigned long SYNC_INTERVAL = 30000; // Sync every 30 seconds
+const unsigned long SYNC_INTERVAL = 5000; // Sync every 5 seconds
 
 int currentScreen = 0; // 0=Clock, 1=Info
 unsigned long lastScreenSwitch = 0;
